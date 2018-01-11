@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../dist/css/bootstrap.min.css" />
     <script src="main.js"></script>
 </head>
-<body style="padding:20px;"> 
+<body style="padding:20px;">
     <p>
         <p>
             <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
@@ -17,11 +17,73 @@
         <p>
             <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
             <button type="button" class="btn btn-default">（默认尺寸）Default button</button>
+            <button type="button" class="btn btn-disable">（默认尺寸）Default button</button>
         </p>
         <p>
             <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
             <button type="button" class="btn btn-default btn-sm">（小按钮）Small button</button>
         </p>
     </p>
+
+    <div style="width:700px; margin:50px auto; padding:50px; border:1px solid #ddd;">
+      <form>
+        <div class="form-group has-error">
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          <span id="helpBlock2" class="help-block">邮箱有误</span>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="checkbox">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1">
+            <i></i>
+             Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary  btn-lg" style="width:100%">Submit</button>
+      </form>
+    </div>
+
+    <div>
+      <p>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox1" value="option1">
+          <i></i>
+           1
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox2" checked="true" value="option2">
+          <i></i>
+          2
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" id="inlineCheckbox3" value="option3">
+          <i></i>
+          3
+        </label>
+      </p>
+
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <i></i>
+        男
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <i></i>
+        女
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+        <i></i>
+        人妖
+      </label>
+    </div>
+
+    <div>
+      <span class="label label-default">default</span>
+      <span class="label label-dark">dark</span>
+    </div>
 </body>
 </html>
