@@ -1,89 +1,157 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../dist/css/bootstrap.min.css" />
-    <script src="main.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>组件模块</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../dist/css/bootstrap.min.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../dist/js/bootstrap.js"></script>
 </head>
+
 <body style="padding:20px;">
+  <p>
     <p>
-        <p>
-            <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
-            <button type="button" class="btn btn-default btn-lg">（大按钮）Large button</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
-            <button type="button" class="btn btn-default">（默认尺寸）Default button</button>
-            <button type="button" class="btn btn-disable">（默认尺寸）Default button</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
-            <button type="button" class="btn btn-default btn-sm">（小按钮）Small button</button>
-        </p>
+      <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
+      <button type="button" class="btn btn-default btn-lg">（大按钮）Large button</button>
     </p>
+    <p>
+      <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
+      <button type="button" class="btn btn-default">（默认尺寸）Default button</button>
+      <button type="button" class="btn btn-disable">（默认尺寸）Default button</button>
+    </p>
+    <p>
+      <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
+      <button type="button" class="btn btn-default btn-sm">（小按钮）Small button</button>
+    </p>
+  </p>
 
-    <div style="width:700px; margin:50px auto; padding:50px; border:1px solid #ddd;">
-      <form>
-        <div class="form-group has-error">
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-          <span id="helpBlock2" class="help-block">邮箱有误</span>
-        </div>
-        <div class="form-group">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="checkbox">
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1">
-            <i></i>
-             Check me out
-          </label>
-        </div>
-        <button type="submit" class="btn btn-primary  btn-lg" style="width:100%">Submit</button>
-      </form>
-    </div>
-
-    <div>
-      <p>
+  <div style="width:700px; margin:50px auto; padding:50px; border:1px solid #ddd;">
+    <form>
+      <div class="form-group has-error">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        <span id="helpBlock2" class="help-block">邮箱有误</span>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="checkbox">
         <label class="checkbox-inline">
           <input type="checkbox" id="inlineCheckbox1" value="option1">
           <i></i>
-           1
+          Check me out
         </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="inlineCheckbox2" checked="true" value="option2">
-          <i></i>
-          2
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" id="inlineCheckbox3" value="option3">
-          <i></i>
-          3
-        </label>
-      </p>
+      </div>
+      <button type="submit" class="btn btn-primary  btn-lg" style="width:100%">Submit</button>
+    </form>
+  </div>
 
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <!-- 单选框、多选框 -->
+  <div>
+    <p>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1">
         <i></i>
-        男
+        1
       </label>
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" checked="true" value="option2">
         <i></i>
-        女
+        2
       </label>
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3">
         <i></i>
-        人妖
+        3
       </label>
-    </div>
+    </p>
 
-    <div>
-      <span class="label label-default">default</span>
-      <span class="label label-dark">dark</span>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <i></i>
+      男
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <i></i>
+      女
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+      <i></i>
+      人妖
+    </label>
+  </div>
+
+  <!-- 标签 -->
+  <div>
+    <span class="label label-default">default</span>
+    <span class="label label-dark">dark</span>
+  </div>
+
+  <!-- 下拉框 -->
+  <div style="width:700px; margin:50px auto; padding:50px; border:1px solid #ddd;">
+    <!-- <select class="custom-select">
+        <option><label class="option-li">111</label></option>
+        <option><label class="option-li">111</label></option>
+      </select> -->
+    <div class="select-control">
+      <input type="text" disabled placeholder="country">
+      <ul>
+        <li>美国</li>
+        <li>英国</li>
+        <li>意大利</li>
+        <li>巴西</li>
+      </ul>
     </div>
+  </div>
+
+  <!-- 弹框 -->
+  <div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      模态框1
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog"  role="document">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div> -->
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <form>
+              <div class="form-group has-error">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <span id="helpBlock2" class="help-block">邮箱有误</span>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="checkbox">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1">
+                  <i></i>
+                  Check me out
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary  btn-lg" style="width:100%">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

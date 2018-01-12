@@ -1,0 +1,44 @@
+//
+// select
+// --------------------------------------------------
+
+.select-control{
+  position: relative;
+
+    input{
+      display: block;
+      width: 100%;
+      height: @input-height-base;
+      padding: @padding-base-vertical @padding-base-horizontal;
+      font-size: @font-size-base;
+      line-height: @line-height-base;
+      color: @input-color;
+      background-color: @input-bg;
+      background-image: none;
+      border: none;
+      border-bottom: 1px solid @input-border;
+      cursor: pointer;
+    }
+
+    &:active{
+
+    }
+    ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      li{
+        height: 30px;
+        line-height: 30px;
+        color: @input-color;
+        background-color: @input-bg;
+        text-indent: 10px;
+        cursor: pointer;
+
+        &:hover{
+          color:#fff;
+          background-color: @brand-red;
+        }
+      }
+  }
+}
