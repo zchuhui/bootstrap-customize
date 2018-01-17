@@ -17,5 +17,64 @@
       font-size:24px;
       font-weight: bold;
     }
+
+    .split-line{
+      position: relative;
+      text-align: center;
+
+      &:before,&:after{
+        position: absolute;
+        left:0;
+        top:9px;
+        display: block;
+        width:160px;
+        height:1px;
+        background:#E7E7E7;
+        overflow: hidden;
+        content: ' ';
+      }
+      &:after{
+        right:0;
+        left:auto;
+      }
+    }
+  }
+
+  .sign-in-other{
+    vertical-align: top;
+    span{
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      vertical-align: text-bottom;
+    }
+    a{
+      display: inline-block;
+      height: 30px;
+      margin-left:25px;
+      text-decoration: none;
+    }
+  }
+  .icon{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background:url('../../images/icons-login.png');
+  }
+  .icon-google{
+    .icon;
+    background-position: -52px 0;
+  }
+  .icon-facebook{
+    .icon;
+    background-position: -26px 0;
+  }
+  .icon-twitter{
+    .icon;
+    background-position: -182px 0;
+  }
+  .icon-instagram{
+    .icon;
+    background-position: -104px 0;
   }
 }

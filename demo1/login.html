@@ -6,9 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" type="text/css" href="./styles/login/login.css">
-  <script src="main.js"></script>
+  <script src="./javascripts/lib/require.js" data-main="./javascripts/login.js" defer async="true"></script>
 </head>
 
 <body class="login-bg-img">
@@ -20,22 +19,41 @@
   <div class="main-login-wrap">
     <div class="form-login">
       <h1>Welcome</h1>
-      <form class="mt30">
-        <div class="form-group has-error">
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-          <span id="helpBlock2" class="help-block">邮箱有误</span>
+      <form class="mt30" id="formLoginId">
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="Email">
+          <!-- <span id="helpBlock2" class="help-block">邮箱有误</span> -->
         </div>
         <div class="form-group">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" class="form-control" name="password" placeholder="Password">
         </div>
-        <button type="submit" class="btn btn-primary  btn-lg mt20 w">Sign in</button>
+        <button type="submit" class="btn btn-primary btn-lg mt20 w" id="btnSignInId">Sign in</button>
       </form>
-      <div class="mt30">
-        <div class="fl">Sign in with: </div>
+      <div class="mt50 clear">
+        <div class="fl sign-in-other">
+          <span> Sign in with:</span>
+
+          <a href="#">
+            <i class="icon-google"></i>
+          </a>
+          <a href="#">
+            <i class="icon-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="icon-twitter"></i>
+          </a>
+        </div>
         <a class="fr" href="#">Forgot Password</a>
       </div>
-        <button type="submit" class="btn btn-default btn-lg mt20 w">Sign up as Brand</button>
-        <button type="submit" class="btn btn-default btn-lg mt20 w">Sign up as Influencer</button>
+      <div class="split-line mt50">
+        <b>New to ImpressWit?</b>
+      </div>
+      <button type="button" class="btn btn-default btn-lg mt30 w">Sign up as Brand</button>
+<button type="button" class="btn btn-default btn-lg mt20 w">Sign up as Influencer</button>
+
     </div>
   </div>
 

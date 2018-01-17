@@ -16,3 +16,72 @@
   font-size: 24px;
   font-weight: bold;
 }
+.main-login-wrap .form-login .split-line {
+  position: relative;
+  text-align: center;
+}
+.main-login-wrap .form-login .split-line:before,
+.main-login-wrap .form-login .split-line:after {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: #E7E7E7;
+  overflow: hidden;
+  content: ' ';
+}
+.main-login-wrap .form-login .split-line:after {
+  right: 0;
+  left: auto;
+}
+.main-login-wrap .sign-in-other {
+  vertical-align: top;
+}
+.main-login-wrap .sign-in-other span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: text-bottom;
+}
+.main-login-wrap .sign-in-other a {
+  display: inline-block;
+  height: 30px;
+  margin-left: 25px;
+  text-decoration: none;
+}
+.main-login-wrap .icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/icons-login.png');
+}
+.main-login-wrap .icon-google {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/icons-login.png');
+  background-position: -52px 0;
+}
+.main-login-wrap .icon-facebook {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/icons-login.png');
+  background-position: -26px 0;
+}
+.main-login-wrap .icon-twitter {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/icons-login.png');
+  background-position: -182px 0;
+}
+.main-login-wrap .icon-instagram {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/icons-login.png');
+  background-position: -104px 0;
+}
