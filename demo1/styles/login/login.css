@@ -36,6 +36,24 @@
   right: 0;
   left: auto;
 }
+.main-login-wrap .form-login .form-group {
+  position: relative;
+}
+.main-login-wrap .form-login .form-group .icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/icons-login.png');
+}
+.main-login-wrap .form-login .form-group .icon-email {
+  background-position: 0 0;
+}
+.main-login-wrap .form-login .form-group .icon-lock {
+  background-position: -131px 0;
+}
 .main-login-wrap .sign-in-other {
   vertical-align: top;
 }

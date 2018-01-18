@@ -112,6 +112,12 @@ a:hover {
 .f20 {
   font-size: 20px;
 }
+.f24 {
+  font-size: 24px;
+}
+.f30 {
+  font-size: 30px;
+}
 .fb {
   font-weight: bold;
 }
@@ -385,4 +391,23 @@ a.gray {
 }
 .pr100 {
   padding-right: 100px;
+}
+.bv-form .help-block {
+  margin-bottom: 0;
+}
+.bv-form .tooltip-inner {
+  text-align: left;
+}
+.nav-tabs li.bv-tab-error > a {
+  color: #a94442;
+}
+.bv-form .bv-icon-no-label {
+  top: 0;
+}
+.bv-form .bv-icon-input-group {
+  top: 0;
+  z-index: 100;
+}
+.has-success .form-control {
+  border-color: #333;
 }

@@ -1,0 +1,72 @@
+@import '../layout.css';
+html,
+body {
+  height: 100%;
+}
+.login-bg-img {
+  background-color: #581828;
+}
+.left {
+  width: 25%;
+  height: 100%;
+  background: #13131B;
+}
+.left .title {
+  margin-top: 90%;
+  color: #fff;
+  text-align: center;
+}
+.right {
+  width: 75%;
+  height: 100%;
+}
+.right .to-login {
+  display: inline-block;
+  margin: 20px;
+  padding: 7px 10px;
+  text-align: center;
+  color: #eee;
+  border: 1px solid #794B67;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.right .main-register-wrap {
+  width: 700px;
+  min-height: 300px;
+  margin: 25% auto;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+.right .main-register-wrap .form-register {
+  padding: 50px 90px;
+}
+.right .main-register-wrap .form-register h1 {
+  font-family: '微软雅黑';
+  font-size: 24px;
+  font-weight: bold;
+}
+.right .main-register-wrap .form-group {
+  position: relative;
+}
+.right .main-register-wrap .form-group .icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/icons-login.png');
+}
+.right .main-register-wrap .form-group .icon-email {
+  background-position: 0 0;
+}
+.right .verify {
+  margin-top: 10%;
+}
+.right .verify .head-wrap i {
+  display: inline-block;
+  width: 101px;
+  height: 56px;
+  background: url("../../images/register.png");
+  background-position: 0 -132px;
+}
