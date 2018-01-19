@@ -45,23 +45,15 @@ body {
   font-size: 24px;
   font-weight: bold;
 }
-.right .main-register-wrap .form-group {
-  position: relative;
-}
-.right .main-register-wrap .form-group .icon {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: url('../../images/icons-login.png');
-}
-.right .main-register-wrap .form-group .icon-email {
+.right .main-register-wrap .icon-email {
   background-position: 0 0;
+  background: url('../../images/icons-login.png');
 }
 .right .verify {
   margin-top: 10%;
+}
+.right .verify .form-group {
+  margin-top: 25px;
 }
 .right .verify .head-wrap i {
   display: inline-block;
@@ -69,4 +61,14 @@ body {
   height: 56px;
   background: url("../../images/register.png");
   background-position: 0 -132px;
+}
+.right .verify .form-auto-placeholder {
+  position: relative;
+}
+.right .verify .form-auto-placeholder .placeholder {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  color: #999;
+  z-index: 0;
 }

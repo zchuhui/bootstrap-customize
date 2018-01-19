@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>公共组件展示</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./components.css">
+  <script src="../javascripts/lib/require.js" data-main="./components.js" defer async="true"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../../dist/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+  <div class="main">
+    <h1>公共组件集合</h1>
+    <div class="panel panel-default">
+      <div class="panel-heading">按钮</div>
+      <div class="panel-body">
+        <p>
+          <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
+          <button type="button" class="btn btn-default btn-lg">（大按钮）Large button</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
+          <button type="button" class="btn btn-default">（默认尺寸）Default button</button>
+          <button type="button" class="btn btn-disable">（默认尺寸）Default button</button>
+        </p>
+        <p>
+          <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
+          <button type="button" class="btn btn-default btn-sm">（小按钮）Small button</button>
+        </p>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">单选框、多选框</div>
+      <div class="panel-body">
+        <p>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1">
+            <i></i>
+             checkbox1
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" checked="true" value="option2">
+            <i></i>
+             checkbox2
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3">
+            <i></i>
+             checkbox3
+          </label>
+        </p>
+
+        <p>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <i></i>
+             radio1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <i></i>
+             radio2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <i></i>
+             radio3
+          </label>
+        </p>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">标签</div>
+      <div class="panel-body">
+        <span class="label label-default">default</span>
+        <span class="label label-dark">dark</span>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">选项框</div>
+      <div class="panel-body">
+        <select class="selectpicker" title="selected">
+          <option>Mustard</option>
+          <option>Ketchup</option>
+          <option>Relish</option>
+          <option>Mustard</option>
+          <option>Ketchup</option>
+          <option>Relish</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">表单</div>
+      <div class="panel-body">
+        <div style="width:700px; margin:50px auto; padding:50px; border:1px solid #ddd;">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+
+            <button type="submit" class="btn btn-primary  btn-lg" style="width:100%">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">模态框</div>
+      <div class="panel-body">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          模态框 1
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <form>
+                  <div class="form-group has-error">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <span id="helpBlock2" class="help-block">邮箱有误</span>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+
+                  <button type="submit" class="btn btn-primary  btn-lg" style="width:100%">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">title</div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">title</div>
+      <div class="panel-body">
+        Panel content
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

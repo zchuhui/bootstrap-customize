@@ -52,28 +52,17 @@ html,body {
         }
       }
 
-      .form-group{
-        position: relative;
-        .icon{
-          position: absolute;
-          right:10px;
-          bottom:10px;
-          display:block;
-          width:20px;
-          height:20px;
-          background:url('../../images/icons-login.png');
-
-        }
-
-        .icon-email{
-          background-position: 0 0;
-        }
-    }
+      .icon-email{
+        background-position: 0 0;
+        background:url('../../images/icons-login.png');
+      }
   }
 
   .verify{
     margin-top:10%;
-
+    .form-group{
+      margin-top:25px;
+    }
     .head-wrap{
       i{
         display: inline-block;
@@ -81,6 +70,18 @@ html,body {
         height:56px;
         background:url("../../images/register.png");
         background-position: 0 -132px;
+      }
+    }
+
+    .form-auto-placeholder{
+      position: relative;
+
+      .placeholder{
+        position: absolute;
+        left:0;
+        top:15px;
+        color:#999;
+        z-index: 0;
       }
     }
   }

@@ -7,7 +7,7 @@
   <title>register</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="./styles/login/register.css">
-  <script src="main.js"></script>
+  <script src="./javascripts/lib/require.js" data-main="./javascripts/register.js" defer async="true"></script>
 </head>
 
 <body class="login-bg-img">
@@ -21,7 +21,7 @@
     </div>
   </div>
   <div class="right fl">
-    <a class="fr to-login" href="#">Login</a>
+    <a class="fr to-login" href="./login.html">Login</a>
     <div class="main-register-wrap">
       <div class="form-register">
         <h1>Brand Sign Up</h1>
@@ -30,7 +30,7 @@
             <i class="icon icon-email"></i>
             <input type="email" class="form-control" name="email" placeholder="Email">
           </div>
-          <button type="submit" class="btn btn-primary btn-lg mt20 w" id="btnSignInId">Continue</button>
+          <button type="submit" class="btn btn-primary btn-lg mt20 w" disabled="disabled" id="btnSignInId">Continue</button>
         </form>
       </div>
     </div>

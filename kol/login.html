@@ -21,14 +21,17 @@
       <h1>Welcome</h1>
       <form class="mt30" id="formLoginId">
         <div class="form-group">
-          <i class="icon icon-email"></i>
+          <i class="input-icon icon-email"></i>
           <input type="email" class="form-control" name="email" placeholder="Email">
         </div>
         <div class="form-group">
-          <i class="icon icon-lock"></i>
+          <i class="input-icon icon-lock"></i>
           <input type="password" class="form-control" name="password" placeholder="Password">
         </div>
-        <button type="submit" class="btn btn-primary btn-lg mt20 w" id="btnSignInId">Sign in</button>
+        <div class="form-group">
+          <input type="text" class="form-control" name="verification-code" placeholder="Enter Verification code">
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg mt20 w" id="btnSignInId" disabled="disabled">Sign in</button>
       </form>
       <div class="mt50 clear">
         <div class="fl sign-in-other">
@@ -52,8 +55,8 @@
       <div class="split-line mt50">
         <b>New to ImpressWit?</b>
       </div>
-      <button type="button" class="btn btn-default btn-lg mt30 w">Sign up as Brand</button>
-      <button type="button" class="btn btn-default btn-lg mt20 w">Sign up as Influencer</button>
+      <a href="./register.html"><button type="button" class="btn btn-default btn-lg mt30 w">Sign up as Brand</button></a>
+      <a href="./register-verify.html"><button type="button" class="btn btn-default btn-lg mt20 w">Sign up as Influencer</button></a>
 
     </div>
   </div>

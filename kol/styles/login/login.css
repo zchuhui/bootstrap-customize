@@ -10,6 +10,19 @@
 }
 .main-login-wrap .form-login {
   padding: 50px 90px;
+  /* .form-group{
+      position: relative;
+
+      .icon{
+        position: absolute;
+        right:10px;
+        bottom:10px;
+        display:block;
+        width:20px;
+        height:20px;
+      }
+
+    } */
 }
 .main-login-wrap .form-login h1 {
   font-family: '微软雅黑';
@@ -36,22 +49,12 @@
   right: 0;
   left: auto;
 }
-.main-login-wrap .form-login .form-group {
-  position: relative;
-}
-.main-login-wrap .form-login .form-group .icon {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  display: block;
-  width: 20px;
-  height: 20px;
+.main-login-wrap .form-login .icon-email {
   background: url('../../images/icons-login.png');
-}
-.main-login-wrap .form-login .form-group .icon-email {
   background-position: 0 0;
 }
-.main-login-wrap .form-login .form-group .icon-lock {
+.main-login-wrap .form-login .icon-lock {
+  background: url('../../images/icons-login.png');
   background-position: -131px 0;
 }
 .main-login-wrap .sign-in-other {

@@ -8,18 +8,20 @@
     margin-bottom: 0; // For input.btn
     font-weight: @btn-font-weight;
     text-align: center;
+    font-weight: bold;
     vertical-align: middle;
     touch-action: manipulation;
     cursor: pointer;
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
     border: none;
     white-space: nowrap;
-    .button-size(@padding-base-vertical;
-    @padding-base-horizontal;
-    @font-size-base;
-    @line-height-base;
-    @btn-border-radius-base;
-    @btn-base-min-width);
+    .button-size(
+      @padding-base-vertical;
+      @padding-base-horizontal;
+      @font-size-base;
+      @line-height-base;
+      @btn-border-radius-base;
+      @btn-base-min-width);
     .user-select(none);
     &,
     &:active,
@@ -70,7 +72,7 @@
     @btn-primary-border);
 }
 
-.btn-disable {
+.btn-disable,.btn[disabled],.btn.disabled {
     .button-variant(@btn-disable-color;
     @btn-disable-bg;
     @btn-disable-border);
